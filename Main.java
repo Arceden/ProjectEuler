@@ -16,7 +16,8 @@ public class Main {
 //        Problem7 problem7 = new Problem7();
 //        Problem8 problem8 = new Problem8();
 //        Problem9 problem9 = new Problem9(); //TODO: this solution in general
-        Problem10 problem10 = new Problem10();
+//        Problem10 problem10 = new Problem10();
+        Problem11 problem11 = new Problem11();
 
     }
 
