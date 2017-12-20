@@ -12,6 +12,7 @@ public class Main {
         Problem3 problem3 = new Problem3();
         Problem4 problem4 = new Problem4();
         Problem5 problem5 = new Problem5();   //This one may take a while to load
+        Problem6 problem6 = new Problem6();
 
     }
 
