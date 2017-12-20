@@ -13,4 +13,10 @@ public class Functions {
         System.out.println(prefix+msg);
     }
 
+    public void print(long msg) { System.out.println(prefix+msg); }
+
+    public void print(double msg) { System.out.println(prefix+msg); }
+
+    public void print(float msg) { System.out.println(prefix+msg); }
+
 }

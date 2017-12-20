@@ -9,7 +9,7 @@ public class Main {
 
         Problem1 problem1 = new Problem1();
         Problem2 problem2 = new Problem2();
-
+        Problem3 problem3 = new Problem3();
 
     }
 
