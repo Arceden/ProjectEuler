@@ -21,9 +21,9 @@ public class Problem14 extends Functions {
 
     public Problem14(){
 
-        int highscore=0;
-        int highestStartingNum=0;
-        int max=1000000;
+        int highscore=0;                    //This will be the highscore for terms
+        int highestStartingNum=0;           //This will be the starting number which gets the most terms
+        int max=1000000;                    //Maximum amount of starting numbers to try
 
         for(int x=13;x<max;x++){
             int terms = getCollatzTerms(x);
@@ -33,13 +33,14 @@ public class Problem14 extends Functions {
             }
         }
 
+        //Print the answer
         print(highestStartingNum);
 
     }
 
-    public int getCollatzTerms(int num){
+    private int getCollatzTerms(long num){
 
-        int terms = 1;      //Count the amount of terms.
+        int terms = 0;      //Count the amount of terms.
 
         while(num>1){       //Initial loop until the 1 has been hit
 
