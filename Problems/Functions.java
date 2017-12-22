@@ -1,5 +1,7 @@
 package Problems;
 
+import java.math.BigInteger;
+
 public class Functions {
 
     //Make a prefix
@@ -20,6 +22,8 @@ public class Functions {
     public void print(float msg) { System.out.println(prefix+msg); }
 
     public void print(boolean msg) { System.out.println(prefix+msg); }
+
+    public void print(BigInteger msg) { System.out.println(prefix+msg); }
 
     public boolean isPrime(int num) {
         if (num < 2) return false;
