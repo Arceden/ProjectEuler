@@ -3,7 +3,7 @@ package Problems;
 /**
  * Created by Arnold on 20-12-2017.
  */
-public class Problem6 extends Functions {
+public class Problem006 extends Functions {
 
     //The sum of the squares of the first ten natural numbers is,
     //  1^2 + 2^2 + ... + 10^2 = 385
@@ -16,7 +16,7 @@ public class Problem6 extends Functions {
 
     int natural_numbers = 100;
 
-    public Problem6(){
+    public Problem006(){
 
         //Make the "Sum of the squares"
         int susq = 0;

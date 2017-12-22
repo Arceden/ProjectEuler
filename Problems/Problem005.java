@@ -3,12 +3,12 @@ package Problems;
 /**
  * Created by Arnold on 20-12-2017.
  */
-public class Problem5 extends Functions {
+public class Problem005 extends Functions {
 
     //2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
     //What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
-    public Problem5(){
+    public Problem005(){
 
         int number = 1;         //Counter
         boolean clear = false;  //This becomes true when the smallest number has been achieved

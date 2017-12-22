@@ -2,7 +2,7 @@ package Problems;
 
 import java.util.ArrayList;
 
-public class Problem11 extends Functions {
+public class Problem011 extends Functions {
 
     //In the 20×20 grid below, four numbers along a diagonal line have been marked in red.
     //
@@ -33,7 +33,7 @@ public class Problem11 extends Functions {
 
     long highest = 0;
 
-    public Problem11(){
+    public Problem011(){
 
         String mesh =   "08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08\n" +
                         "49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00\n" +

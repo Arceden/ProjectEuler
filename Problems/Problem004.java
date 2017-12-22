@@ -3,13 +3,13 @@ package Problems;
 /**
  * Created by Arnold on 20-12-2017.
  */
-public class Problem4 extends Functions {
+public class Problem004 extends Functions {
 
     //A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit
     //numbers is 9009 = 91 × 99.
     //Find the largest palindrome made from the product of two 3-digit numbers.
 
-    public Problem4(){
+    public Problem004(){
 
         int max = 1000;
         int highest = 0;

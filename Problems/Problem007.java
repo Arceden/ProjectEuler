@@ -3,12 +3,12 @@ package Problems;
 /**
  * Created by Arnold on 20-12-2017.
  */
-public class Problem7 extends Functions {
+public class Problem007 extends Functions {
 
     //By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
     //What is the 10001st prime number?
 
-    public Problem7(){
+    public Problem007(){
 
         int x = 1;              //This integer is what will be check if it is or isnt a prime
         int print_nth = 0;      //This integer counts up when a prime has been found

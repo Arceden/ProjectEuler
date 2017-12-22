@@ -5,11 +5,11 @@ import java.math.BigInteger;
 /**
  * Created by Arnold on 21-12-2017.
  */
-public class Problem13 extends Functions {
+public class Problem013 extends Functions {
 
     //Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
 
-    public Problem13() {
+    public Problem013() {
 
         //The number mesh
         String mesh =   "37107287533902102798797998220837590246510135740250\n" +

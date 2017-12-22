@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by Arnold on 11-9-2017.
  */
-public class Problem1 extends Functions {
+public class Problem001 extends Functions {
 
     //If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.
     //The sum of these multiples is 23
@@ -16,7 +16,7 @@ public class Problem1 extends Functions {
     protected int sum = 0;
     protected ArrayList<Integer> numbers = new ArrayList<Integer>();
 
-    public Problem1(){
+    public Problem001(){
 
         //Place numbers
         numbers.add(3);

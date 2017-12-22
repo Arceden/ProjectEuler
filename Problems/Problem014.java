@@ -3,7 +3,7 @@ package Problems;
 /**
  * Created by Arnold on 22-12-2017.
  */
-public class Problem14 extends Functions {
+public class Problem014 extends Functions {
 
     //The following iterative sequence is defined for the set of positive integers:
     //
@@ -19,7 +19,7 @@ public class Problem14 extends Functions {
     //
     //NOTE: Once the chain starts the terms are allowed to go above one million.
 
-    public Problem14(){
+    public Problem014(){
 
         int highscore=0;                    //This will be the highscore for terms
         int highestStartingNum=0;           //This will be the starting number which gets the most terms
