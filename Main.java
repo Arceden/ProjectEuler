@@ -21,7 +21,8 @@ public class Main {
 //        Problem012 problem012 = new Problem012();       //TODO: this solution in general
 //        Problem013 problem013 = new Problem013();
 //        Problem014 problem014 = new Problem014();
-        Problem015 problem015 = new Problem015();
+//        Problem015 problem015 = new Problem015();
+        Problem016  problem016 = new Problem016();
 
     }
 
