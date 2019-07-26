@@ -5,7 +5,7 @@
  */
 
 #include <iostream>
-#include "LinkedList.h"
+#include "Classes/LinkedList.cc"
 
 /**
  * Get multiples from below _n_

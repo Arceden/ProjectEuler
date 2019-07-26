@@ -3,7 +3,7 @@
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 #include <iostream>
-#include "Fibonnaci.h"
+#include "Classes/Fibonnaci.cc"
 
 int main() {
 
@@ -16,7 +16,7 @@ int main() {
         }
     });
 
-    std::cout << "The sum of all even-valued terms: " << sum;
+    std::cout << "The sum of all even-valued terms whose values do not exceed four million: " << sum;
 
     return 0;
 
