@@ -5,21 +5,41 @@
  */
 
 #include <iostream>
-#include "ArrayList.h"
 #include "LinkedList.h"
 
-int * getMultiples(int n) {
-    // ArrayList a = ArrayList();
-    LinkedList<int> a = LinkedList<int>();
+/**
+ * Get multiples from below _n_
+ */
+LinkedList<int> getMultiples(int step, int max) {
+    LinkedList<int> list = LinkedList<int>();
 
-    for(int i=0;i<=n;i++) {
-        a.add(i);
+    for(int i=step;i<max;i+=step) {
+        list.add(i);
     }
 
-    a.getList();
+    return list;
 }
 
 int main() {
-    getMultiples(16);
+    const int MAX = 1000;
+
+    // Get all multiples
+    LinkedList<int> list = getMultiples(3, MAX);
+    LinkedList<int> list2 = getMultiples(5, MAX);
+
+    // Make it into one big list
+    list.prepend(list2);
+
+    // Remove duplicates
+    list.distinct();
+
+    // Get sum of numbers
+    int sum = 0;
+    list.forEach([&sum](int num){
+        sum += num;
+    });
+
+    std::cout << "\nSum: " << sum;
+
     return 0;
 }

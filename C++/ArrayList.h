@@ -12,7 +12,6 @@ class ArrayList {
 
 ArrayList::ArrayList(void) {
     size = 0;
-    int list[size] = {};
 }
 
 void ArrayList::add(int num) {
