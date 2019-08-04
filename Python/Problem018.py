@@ -68,22 +68,9 @@ def from_below_first_best_choice(number_list, start_depth, pos_depth, print_step
         if debug:
             print("X\t", current)
 
-        left = 0
-        right = 0
-
-        # Cant go left
-        if pos < 0:
-            if debug:
-                print("XX\tCan't go left!\tPos: {}".format(pos))
-        else:
-            left = sumRoute(pos - 1, layer + 1, depth - 1)
-
-        # Cant go right
-        if pos > (len(number_list[layer + 1]) - 1):
-            if debug:
-                print("XX\tCan't go right!\tPos: {}".format(pos))
-        else:
-            right = sumRoute(pos, layer + 1, depth - 1)
+        # Go left and right
+        left = sumRoute(pos - 1, layer + 1, depth - 1)
+        right = sumRoute(pos, layer + 1, depth - 1)
 
         layer += 1
         if left > right:
