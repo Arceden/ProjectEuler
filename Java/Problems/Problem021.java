@@ -31,7 +31,7 @@ public class Problem021 implements Problem {
             // Add to the map
             map.put(i, sum);
 
-            // The number 6 has 6 divisors, i don't think this counts
+            // d(6) has a sum of 6, i don't think this counts
             if (sum == i)
                 continue;
 
