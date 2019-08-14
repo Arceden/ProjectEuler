@@ -2,6 +2,8 @@
  * Custom linked list
  */
 
+#include <functional>
+
 template <typename T>
 struct node {
     T data;

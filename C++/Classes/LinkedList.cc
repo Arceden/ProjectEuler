@@ -1,4 +1,5 @@
 #include "LinkedList.h"
+#include <functional>
 
 /**
  * LinkedList implementation
@@ -55,6 +56,9 @@ template <typename T>
 void LinkedList<T>::forEach(std::function<void(T)> callback) {
     node<T> *pos = head;
 
+    if (pos == NULL)
+        return;
+
     do {
         callback(pos->data);
     } while((pos = pos->next) != NULL);
@@ -68,7 +72,7 @@ int LinkedList<T>::size() {
     int sum = 0;
 
     forEach([&sum](int n){
-        sum+=n;
+        sum++;
     });
 
     return sum;
