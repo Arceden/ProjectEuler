@@ -1,5 +1,3 @@
-package Problems;
-
 import java.util.HashMap;
 import java.util.LinkedList;
 

@@ -1,5 +1,3 @@
-package Problems;
-
 import java.math.BigInteger;
 import java.util.ArrayList;
 

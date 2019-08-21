@@ -1,5 +1,3 @@
-package Problems;
-
 import java.util.ArrayList;
 
 public class Problem011 extends Functions {

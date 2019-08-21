@@ -1,5 +1,3 @@
-package Problems;
-
 public class Problem010 extends Functions {
 
     //The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.

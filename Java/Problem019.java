@@ -1,7 +1,5 @@
-package Problems;
-
-import Problems.Classes.Calendar;
-import Problems.Classes.Seasoning;
+import Classes.Calendar;
+import Classes.Seasoning;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;

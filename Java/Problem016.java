@@ -1,5 +1,3 @@
-package Problems;
-
 import java.math.BigInteger;
 
 public class Problem016 extends Functions {

@@ -1,4 +1,4 @@
-package Problems.Classes;
+package Classes;
 
 public class Calendar extends Seasoning {
 

@@ -1,5 +1,3 @@
-package Problems;
-
 /**
  * Created by Arnold on 22-12-2017.
  */
