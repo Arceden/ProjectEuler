@@ -20,7 +20,10 @@ LinkedList<int> getMultiples(int step, int max) {
     return list;
 }
 
-int main() {
+/**
+ * Solve with a Custom LinkedList class, because why not
+ */
+void solveWithClass() {
     const int MAX = 1000;
 
     // Get all multiples
@@ -40,6 +43,26 @@ int main() {
     });
 
     std::cout << "\nSum: " << sum;
+}
+
+/**
+ * Short and easy solve
+ */
+void solveEasy() {
+    int sum = 0;
+    int limit = 1000;
+
+    for (int i=0; i<limit; i++)
+        if (i % 3 == 0 || i % 5 == 0)
+            sum += i;
+
+    std::cout << "\nSum: " << sum;
+}
+
+int main() {
+
+    solveWithClass();
+    solveEasy();
 
     return 0;
 }
