@@ -1,12 +1,16 @@
 import java.math.BigInteger;
 
-public class Problem016 extends Functions {
+public class Problem016 implements Problem {
 
     //2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
     //What is the sum of the digits of the number 2^1000?
 
-    public Problem016() {
+    public static void main(String[] args) {
+        new Problem016().solve();
+    }
 
+    @Override
+    public void solve() {
         BigInteger num = goPow(2,1000);              //Big integer has to be used since long is too small
         long sum = 0;                                       //A sum is needed for later
 
@@ -16,8 +20,7 @@ public class Problem016 extends Functions {
         }
 
         //Print the answer
-        print(sum);
-
+        System.out.println(sum);
     }
 
     /**

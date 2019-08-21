@@ -3,7 +3,7 @@ import java.util.ArrayList;
 /**
  * Created by Arnold on 20-12-2017.
  */
-public class Problem008 extends Functions {
+public class Problem008 implements Problem {
 
     // The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
     //
@@ -54,8 +54,12 @@ public class Problem008 extends Functions {
             7,1,6,3,6,2,6,9,5,6,1,8,8,2,6,7,0,4,2,8,2,5,2,4,8,3,6,0,0,8,2,3,2,5,7,5,3,0,4,2,0,7,5,2,9,6,3,4,5,0};
     ArrayList<Integer> ints = new ArrayList<>();
 
-    public Problem008(){
+    public static void main(String[] args) {
+        new Problem008().solve();
+    }
 
+    @Override
+    public void solve() {
         //Highscore variable has to be a long because the answer is longer than a Integer can be
         long highscore = 0L;
 
@@ -75,8 +79,6 @@ public class Problem008 extends Functions {
         }
 
         //Print the answer
-        print(highscore);
-
+        System.out.println(highscore);
     }
-
 }

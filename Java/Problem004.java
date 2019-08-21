@@ -1,14 +1,18 @@
 /**
  * Created by Arnold on 20-12-2017.
  */
-public class Problem004 extends Functions {
+public class Problem004 implements Problem {
 
     //A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit
     //numbers is 9009 = 91 × 99.
     //Find the largest palindrome made from the product of two 3-digit numbers.
 
-    public Problem004(){
+    public static void main(String[] args) {
+        new Problem004().solve();
+    }
 
+    @Override
+    public void solve() {
         int max = 1000;
         int highest = 0;
 
@@ -49,8 +53,6 @@ public class Problem004 extends Functions {
             }
         }
 
-        print(highest);
-
+        System.out.println(highest);
     }
-
 }

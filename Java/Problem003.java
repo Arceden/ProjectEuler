@@ -1,18 +1,21 @@
 import java.math.BigInteger;
 import java.util.ArrayList;
 
-public class Problem003 extends Functions {
+public class Problem003 implements Problem {
 
     //The prime factors of 13195 are 5, 7, 13 and 29.
     //What is the largest prime factor of the number 600851475143 ?
 
-//    long number = 13195L;
     long number = 600851475143L;
     long counter = 2L;
     boolean finished = false;
 
-    public Problem003(){
+    public static void main(String[] args) {
+        new Problem003().solve();
+    }
 
+    @Override
+    public void solve() {
         long n = number;
         ArrayList<Long> primes = new ArrayList<>();
 
@@ -26,11 +29,8 @@ public class Problem003 extends Functions {
             }
 
             if(n<2||counter>=number)finished=true;
-
         }
 
-        print(primes.get(primes.size()-1));
-
+        System.out.println(primes.get(primes.size()-1));
     }
-
 }

@@ -1,7 +1,7 @@
 /**
  * Created by Arnold on 20-12-2017.
  */
-public class Problem009 extends Functions {
+public class Problem009 implements Problem {
 
     //A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
     //
@@ -11,8 +11,12 @@ public class Problem009 extends Functions {
     //There exists exactly one Pythagorean triplet for which a + b + c = 1000.
     //Find the product abc.
 
-    public Problem009(){
+    public static void main(String[] args) {
+        new Problem009().solve();
+    }
 
+    @Override
+    public void solve() {
         final int sum = 1000;
         int a, b, c;
 
@@ -20,7 +24,7 @@ public class Problem009 extends Functions {
             for(b=1;b<sum/2;b++){
                 c = sum-a-b;
                 if(a*a+b*b==c*c){
-                    print(a*b*c);
+                    System.out.println(a*b*c);
                     return;
                 }
             }

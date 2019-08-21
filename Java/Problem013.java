@@ -3,12 +3,16 @@ import java.math.BigInteger;
 /**
  * Created by Arnold on 21-12-2017.
  */
-public class Problem013 extends Functions {
+public class Problem013 implements Problem{
 
     //Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
 
-    public Problem013() {
+    public static void main(String[] args) {
+        new Problem013().solve();
+    }
 
+    @Override
+    public void solve() {
         //The number mesh
         String mesh =   "37107287533902102798797998220837590246510135740250\n" +
                 "46376937677490009712648124896970078050417018260538\n" +
@@ -121,7 +125,7 @@ public class Problem013 extends Functions {
         }
 
         //Only display the first 10 numbers
-        print(sum.toString().substring(0,10));
+        System.out.println(sum.toString().substring(0,10));
 
     }
 

@@ -1,7 +1,7 @@
 /**
  * Created by Arnold on 20-12-2017.
  */
-public class Problem006 extends Functions {
+public class Problem006 implements Problem {
 
     //The sum of the squares of the first ten natural numbers is,
     //  1^2 + 2^2 + ... + 10^2 = 385
@@ -14,8 +14,12 @@ public class Problem006 extends Functions {
 
     int natural_numbers = 100;
 
-    public Problem006(){
+    public static void main(String[] args) {
+        new Problem006().solve();
+    }
 
+    @Override
+    public void solve() {
         //Make the "Sum of the squares"
         int susq = 0;
         for(int x=1;x<=natural_numbers;x++){
@@ -29,9 +33,6 @@ public class Problem006 extends Functions {
         }
         sqsu=(int)Math.pow(sqsu,2);
 
-        print(sqsu-susq);
-
-
+        System.out.println(sqsu-susq);
     }
-
 }

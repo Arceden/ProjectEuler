@@ -1,7 +1,7 @@
 /**
  * Created by Arnold on 22-12-2017.
  */
-public class Problem014 extends Functions {
+public class Problem014 implements Problem {
 
     //The following iterative sequence is defined for the set of positive integers:
     //
@@ -17,8 +17,12 @@ public class Problem014 extends Functions {
     //
     //NOTE: Once the chain starts the terms are allowed to go above one million.
 
-    public Problem014(){
+    public static void main(String[] args) {
+        new Problem014().solve();
+    }
 
+    @Override
+    public void solve() {
         int highscore=0;                    //This will be the highscore for terms
         int highestStartingNum=0;           //This will be the starting number which gets the most terms
         int max=1000000;                    //Maximum amount of starting numbers to try
@@ -32,8 +36,7 @@ public class Problem014 extends Functions {
         }
 
         //Print the answer
-        print(highestStartingNum);
-
+        System.out.println(highestStartingNum);
     }
 
     private int getCollatzTerms(long num){
