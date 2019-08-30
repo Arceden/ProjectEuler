@@ -1,0 +1,30 @@
+/*
+    The 5-digit number, 16807=7^5, is also a fifth power.
+    Similarly, the 9-digit number, 134217728=8^9, is a ninth power.
+    How many n-digit positive integers exist which are also an nth power?
+ */
+
+import java.math.BigInteger;
+
+public class Problem063 implements Problem {
+    public static void main(String[] args) {
+        new Problem063().solve();
+    }
+
+    @Override
+    public void solve() {
+
+        int sum = 0;
+        for (int i=1; i<=100; i++) {
+            for (int exp=1; exp<=100; exp++) {
+                BigInteger n = BigInteger.valueOf(i);
+                n = n.pow(exp);
+
+                if (n.toString().length() == exp)
+                    sum++;
+            }
+        }
+
+        System.out.println(sum);
+    }
+}
