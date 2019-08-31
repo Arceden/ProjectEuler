@@ -64,6 +64,36 @@ void LinkedList<T>::forEach(std::function<void(T)> callback) {
     } while((pos = pos->next) != NULL);
 }
 
+template <typename T>
+bool LinkedList<T>::contains(T query) {
+    if (size() == 0)
+        return false;
+
+    bool res = false;
+
+    forEach([&query, &res](T item) {
+        if (query == item)
+            res = true;
+    });
+
+    return res;
+}
+
+template <typename T>
+int LinkedList<T>::occurance(T query) {
+    if (size() == 0)
+        return 0;
+
+    int sum = 0;
+
+    forEach([&query, &sum](T item) {
+        if (query == item)
+            sum++;
+    });
+
+    return sum;
+}
+
 /**
  * Get the size of the LinkedList
  */

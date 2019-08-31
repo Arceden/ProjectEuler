@@ -26,6 +26,9 @@ class LinkedList {
         void prepend(LinkedList<T> list);
         void distinct();
 
+        bool contains(T query);
+        int occurance(T query);
+
         int size();
         T get(int index);
 };
