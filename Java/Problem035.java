@@ -8,9 +8,9 @@ public class Problem035 implements Problem {
     @Override
     public void solve() {
         int limit = 1000000;
-        int sum = 0;
+        int sum = 1;
 
-        for (int i=2; i<limit; i++)
+        for (int i=3; i<limit; i += 2)
             if (Prime.isCircular(i))
                 sum++;
 
